@@ -1,7 +1,11 @@
 	public class ContaCorrente {
-		public double saldo;
+		// Atributos
+		private double saldo;
+		
+		
+		// Métodos
 		public double consultarSaldo(){
 		return saldo;
-	}
+		}
 
 	}
