@@ -1,9 +1,7 @@
-ss	public class ContaCorrente {
-		//Atributos
-		
-		
-		
-		//Métodos
-		
-	
-	}	
+	public class ContaCorrente {
+		public double saldo;
+		public double consultarSaldo(){
+		return saldo;
+	}
+
+	}
