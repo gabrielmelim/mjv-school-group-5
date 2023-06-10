@@ -9,7 +9,7 @@ public class ContaCorrente {
 	
     
 	//Construtor
-    public ContaCorrente(String nomeCliente, double saldoInicial, String numeroAgencia, int numeroConta, String dataNascimento) {
+    public ContaCorrente(String nomeCliente, double saldoInicial, String numeroAgencia, int numeroConta, String dataNascimento,) {
         this.nomeCliente = nomeCliente;
         this.saldo = saldoInicial;
 		this.numeroAgencia = numeroAgencia;
@@ -48,8 +48,9 @@ public class ContaCorrente {
      }
   
   
-	public int consultarExtrato (int numeroConta){
-			System.out.println("Extrato da conta " + numeroConta);
+	public int consultarExtratoEntreDatas (String dataInicio, String dataFinal, int numeroConta){
+		
+			System.out.println("Extrato da conta: " + numeroConta + " entre a data" + dataInicio + " e " + dataFinal);
 		}
 	
   
