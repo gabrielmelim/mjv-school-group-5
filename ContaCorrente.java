@@ -2,11 +2,12 @@ public class ContaCorrente {
     //Atributos  
     private double saldoIncial;
     private final String nomeCliente;
-
+    private String numeroAgencia;
     //Construtor
     public ContaCorrente(String nomeCliente, double saldoInicial) {
         this.nomeCliente = nomeCliente;
         this.saldoInicial= saldoInicial;
+	this.numeroAgencia= numeroAgencia;
     }
 
     //Métodos
@@ -14,6 +15,9 @@ public class ContaCorrente {
        return saldo;
 
     }
+	public void transferir(String nomeBeneficiario, String agenciaBeneficiario, String contaBeneficiario, double valorTransferencia){
+		System.out.println("Transferencia realizada");
+	}
   
      public void cancelarConta(String justificativa) {
        // deleteById(this.numeroConta); Metodo apenas para exemplo
