@@ -3,72 +3,92 @@
 </div>
 <h1 align="center">Mjv School - Java</h1>
 <h2 align="center">Diagrama - Universidade</h2>
-<h3>Descrição do diagrama</h3>
-Classe "Universidade":
 
-Atributos:
+### Descrição do diagrama
 
-nome: String - representa o nome da universidade.
+### Classe "Universidade"
 
+#### Atributos:
+
+nome: String - representa o nome da universidade.<br>
 endereco: String - representa o endereço da universidade.
-Métodos:
 
-adicionarAluno(aluno: Aluno): void - adiciona um aluno à universidade.
-removerAluno(aluno: Aluno): void - remove um aluno da universidade.
-listarAlunos(): Aluno[] - retorna uma lista com todos os alunos da universidade.
-Classe "Aluno":
+**Métodos:**
 
-Atributos:
+adicionarAluno(aluno: Aluno): void - adiciona um aluno à universidade.<br>
+removerAluno(aluno: Aluno): void - remove um aluno da universidade.<br>
+listarAlunos(): Aluno[] - retorna uma lista com todos os alunos da universidade.<br>
 
-matricula: String - representa a matrícula do aluno.
-nome: String - representa o nome do aluno.
-endereco: String - representa o endereço do aluno.
-Métodos:
+### Classe "Aluno"
 
-getMatricula(): String - retorna a matrícula do aluno.
-getNome(): String - retorna o nome do aluno.
-getEndereco(): String - retorna o endereço do aluno.
-Classe "Professor":
+#### Atributos:
 
-Atributos:
+matricula: String - representa a matrícula do aluno.<br>
+nome: String - representa o nome do aluno.<br>
+endereco: String - representa o endereço do aluno.<br>
 
-codigo: String - representa o código do professor.
-nome: String - representa o nome do professor.
-endereco: String - representa o endereço do professor.
-Métodos:
+#### Métodos:
 
-getCodigo(): String - retorna o código do professor.
-getNome(): String - retorna o nome do professor.
-getEndereco(): String - retorna o endereço do professor.
-Classe "Disciplina":
+getMatricula(): String - retorna a matrícula do aluno.<br>
+getNome(): String - retorna o nome do aluno.<br>
+getEndereco(): String - retorna o endereço do aluno.<br>
 
-Atributos:
 
-codigo: String - representa o código da disciplina.
-nome: String - representa o nome da disciplina.
-cargaHoraria: int - representa a carga horária da disciplina em horas.
-Métodos:
+### Classe "Professor"
 
-getCodigo(): String - retorna o código da disciplina.
-getNome(): String - retorna o nome da disciplina.
-getCargaHoraria(): int - retorna a carga horária da disciplina.
-Classe "Turma":
+#### Atributos:
 
-Atributos:
+codigo: String - representa o código do professor.<br>
+nome: String - representa o nome do professor.<br>
+endereco: String - representa o endereço do professor.<br>
 
-codigo: String - representa o código da turma.
-horario: String - representa o horário da turma.
-Métodos:
+#### Métodos:
 
-getCodigo(): String - retorna o código da turma.
-getHorario(): String - retorna o horário da turma.
-Relacionamentos:
+getCodigo(): String - retorna o código do professor.<br>
+getNome(): String - retorna o nome do professor.<br>
+getEndereco(): String - retorna o endereço do professor.<br>
 
-Associação:
 
-A classe "Universidade" possui uma associação com a classe "Aluno". Isso significa que a universidade tem uma coleção de alunos.
-A classe "Disciplina" possui uma associação com a classe "Professor". Isso significa que uma disciplina é ministrada por um professor.
-A classe "Turma" possui associações com as classes "Professor" e "Disciplina". Isso significa que uma turma é formada por um professor e uma disciplina específicos.
+### Classe "Disciplina"
+
+#### Atributos:
+
+codigo: String - representa o código da disciplina.<br>
+nome: String - representa o nome da disciplina.<br>
+cargaHoraria: int - representa a carga horária da disciplina em horas.<br>
+
+#### Métodos:
+
+getCodigo(): String - retorna o código da disciplina.<br>
+getNome(): String - retorna o nome da disciplina.<br>
+getCargaHoraria(): int - retorna a carga horária da disciplina.<br>
+
+
+### Classe "Turma"
+
+#### Atributos:
+
+codigo: String - representa o código da turma.<br>
+horario: String - representa o horário da turma.<br>
+
+
+#### Métodos:
+
+getCodigo(): String - retorna o código da turma.<br>
+getHorario(): String - retorna o horário da turma.<br>
+
+### Classe "DisciplinaProfessor"
+A classe "DisciplinaProfessor" pode ser entendida como uma entidade intermediária que estabelece a relação entre uma disciplina específica e o professor responsável por ministrá-la. Essa classe pode conter informações adicionais sobre a relação entre a disciplina e o professor, como a carga horária atribuída ao professor para aquela disciplina específica, notas ou avaliações dadas pelo professor aos alunos, entre outros aspectos relacionados ao ensino da disciplina.
+
+Dessa forma, a classe "DisciplinaProfessor" atua como uma ligação entre as classes "Disciplina" e "Professor", permitindo que seja estabelecido o relacionamento específico entre uma disciplina e o professor responsável por ela.
+
+### Relacionamentos:
+
+#### Associação:
+
+A classe "Universidade" possui uma associação com a classe "Aluno". Isso significa que a universidade tem uma coleção de alunos.<br>
+A classe "Disciplina" possui uma associação com a classe "Professor". Isso significa que uma disciplina é ministrada por um professor.<br>
+A classe "Turma" possui associações com as classes "Professor" e "Disciplina". Isso significa que uma turma é formada por um professor e uma disciplina específicos.<br>
 <p align="left">
   <img src="https://raw.githubusercontent.com/gabrielmelim/mjv-school-group-5/gabriel-melim/Diagrama/diagrama.png" width="80%">
 </p>
