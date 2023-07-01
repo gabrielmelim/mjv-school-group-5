@@ -4,6 +4,11 @@
 <h1 align="center">Mjv School - Java</h1>
 <h2 align="center">Diagrama - Universidade</h2>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/gabrielmelim/mjv-school-group-5/gabriel-melim/Diagrama/diagrama.png" width="60%">
+
+<div align="center"> 
+
 ### Descrição do diagrama
 
 ### Classe "Universidade"
@@ -89,6 +94,4 @@ Dessa forma, a classe "DisciplinaProfessor" atua como uma ligação entre as cla
 A classe "Universidade" possui uma associação com a classe "Aluno". Isso significa que a universidade tem uma coleção de alunos.<br>
 A classe "Disciplina" possui uma associação com a classe "Professor". Isso significa que uma disciplina é ministrada por um professor.<br>
 A classe "Turma" possui associações com as classes "Professor" e "Disciplina". Isso significa que uma turma é formada por um professor e uma disciplina específicos.<br>
-<p align="left">
-  <img src="https://raw.githubusercontent.com/gabrielmelim/mjv-school-group-5/gabriel-melim/Diagrama/diagrama.png" width="80%">
-</p>
+</div>
