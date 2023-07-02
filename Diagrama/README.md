@@ -59,13 +59,15 @@ getEndereco(): String - retorna o endereço do aluno.<br>
 
 #### Atributos:
 
-codigo: String - representa o código do professor.<br>
+idProfessor : Integer - representa indentificador único.<br>
+discplinas: [ ] - representa uma lista de disciplinas do professor.<br>
 nome: String - representa o nome do professor.<br>
 endereco: String - representa o endereço do professor.<br>
 
 #### Métodos:
 
-getCodigo(): String - retorna o código do professor.<br>
+getIdProfessor() : Integer - retorna o indentificador único do professor.<br>
+getListarDisciplinas : Disciplina [ ] - retorna uma lista de disciplinas do professor.<br>
 getNome(): String - retorna o nome do professor.<br>
 getEndereco(): String - retorna o endereço do professor.<br>
 
@@ -74,13 +76,13 @@ getEndereco(): String - retorna o endereço do professor.<br>
 
 #### Atributos:
 
-codigo: String - representa o código da disciplina.<br>
-nome: String - representa o nome da disciplina.<br>
+idDisciplina : Integer- representa o indentificador único.<br>
+nomeDisc: String - representa o nome da disciplina.<br>
 cargaHoraria: int - representa a carga horária da disciplina em horas.<br>
 
 #### Métodos:
 
-getCodigo(): String - retorna o código da disciplina.<br>
+getIdDisciplina(): Integer - retorna o indentificador único da disciplina.<br>
 getNome(): String - retorna o nome da disciplina.<br>
 getCargaHoraria(): int - retorna a carga horária da disciplina.<br>
 
@@ -99,15 +101,18 @@ getCodigo(): String - retorna o código da turma.<br>
 getHorario(): String - retorna o horário da turma.<br>
 
 ### Classe "DisciplinaProfessor"
-A classe "DisciplinaProfessor" pode ser entendida como uma entidade intermediária que estabelece a relação entre uma disciplina específica e o professor responsável por ministrá-la. Essa classe pode conter informações adicionais sobre a relação entre a disciplina e o professor, como a carga horária atribuída ao professor para aquela disciplina específica, notas ou avaliações dadas pelo professor aos alunos, entre outros aspectos relacionados ao ensino da disciplina.
+Classe que associa qual professor tem vocação para uma disciplina em questão, uma disciplina pode ser aplicada por vários professores e um professor pode aplicar mais de uma disciplina.
 
-Dessa forma, a classe "DisciplinaProfessor" atua como uma ligação entre as classes "Disciplina" e "Professor", permitindo que seja estabelecido o relacionamento específico entre uma disciplina e o professor responsável por ela.
+### Classe "TurmaDisciplinaProfessor"
+
+Classe que identifica o professor que irá dar aula, a disciplina que irá ministrar e a turma que a aula será dada, essa classe associa as 3 entidades.
+
 
 ### Relacionamentos:
 
 #### Associação:
 
-A classe "Universidade" possui uma associação com a classe "Aluno". Isso significa que a universidade tem uma coleção de alunos.<br>
-A classe "Disciplina" possui uma associação com a classe "Professor". Isso significa que uma disciplina é ministrada por um professor.<br>
-A classe "Turma" possui associações com as classes "Professor" e "Disciplina". Isso significa que uma turma é formada por um professor e uma disciplina específicos.<br>
+A classe "Universidade" possui uma associação com a classe "Turma". Isso significa que a universidade é vista como um TODO<br>
+A classe "Disciplina" possui uma associação com a classe "Professor". Isso significa que um professor pode conter uma ou mais disciplinas.<br>
+A classe "Turma" possui associações com as classes "Professor" e "Disciplina". Isso significa que uma turma é formada por um  ou mais professores e uma ou mais disciplina específicos.<br>
 </div>
