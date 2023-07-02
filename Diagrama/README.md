@@ -86,20 +86,6 @@ getIdDisciplina(): Integer - retorna o indentificador único da disciplina.<br>
 getNome(): String - retorna o nome da disciplina.<br>
 getCargaHoraria(): int - retorna a carga horária da disciplina.<br>
 
-
-### Classe "Turma"
-
-#### Atributos:
-
-codigo: String - representa o código da turma.<br>
-horario: String - representa o horário da turma.<br>
-
-
-#### Métodos:
-
-getCodigo(): String - retorna o código da turma.<br>
-getHorario(): String - retorna o horário da turma.<br>
-
 ### Classe "DisciplinaProfessor"
 Classe que associa qual professor tem vocação para uma disciplina em questão, uma disciplina pode ser aplicada por vários professores e um professor pode aplicar mais de uma disciplina.
 
