@@ -14,23 +14,39 @@
 ### Classe "Universidade"
 
 #### Atributos:
-
+idUniversidade - representa o indentificador único
 nome: String - representa o nome da universidade.<br>
 endereco: String - representa o endereço da universidade.
 
 **Métodos:**
 
-adicionarAluno(aluno: Aluno): void - adiciona um aluno à universidade.<br>
-removerAluno(aluno: Aluno): void - remove um aluno da universidade.<br>
-listarAlunos(): Aluno[] - retorna uma lista com todos os alunos da universidade.<br>
+ getIdUniversidade() : Integer - retorna o ID da universidade.<br>
+ getNome() : String - retorna o nome da universidade.<br>
+ getEndereco() : String -  retorna o endereço da faculdade.<br>
+
+### Classe "Turma"
+
+#### Atributos:
+
+ idTurma : Integer - representa o indetificador único.<br>
+ codigoTurma : String - representa o código da turma.<br>
+
+#### Métodos:
+ 
+ getIdTurma() : Integer retorna o id da turma.<br>
+ getCodigoTurma() : String - retorna o código da turma.<br>
+ adicionarAlunoTurma(aluno : Aluno) : void - adiciona um aluno em uma turma.<br>
+ removerAlunoTurma(aluno : Aluno) : void - remove o aluno de uma turma<br>
+ listarAlunosTurma() : Aluno [ ] - retorna uma lista de alunos referente a turma<br>
 
 ### Classe "Aluno"
 
 #### Atributos:
 
-matricula: String - representa a matrícula do aluno.<br>
+idAluno : Integer - representa o indentificador único.<br>
 nome: String - representa o nome do aluno.<br>
-endereco: String - representa o endereço do aluno.<br>
+dataNasc : LocalDate - representa a data de nascimento do aluno.<br>
+matricula : String- representa a matricula do aluno.<br>
 
 #### Métodos:
 
