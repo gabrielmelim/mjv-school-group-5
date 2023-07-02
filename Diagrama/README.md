@@ -107,6 +107,11 @@ Classe que associa qual professor tem vocação para uma disciplina em questão,
 
 Classe que identifica o professor que irá dar aula, a disciplina que irá ministrar e a turma que a aula será dada, essa classe associa as 3 entidades.
 
+### Um Exemplo genérico das classes associativas:
+<div align="center">
+  <img src="https://raw.githubusercontent.com/gabrielmelim/mjv-school-group-5/gabriel-melim/Diagrama/exemplo.png" width="60%">
+
+<div align="center"> 
 
 ### Relacionamentos:
 
